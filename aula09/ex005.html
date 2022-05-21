@@ -21,23 +21,23 @@
     <script>
         var corpo = window.document.body
         var p1 = window.document.getElementsByTagName('p')[1] //pegar o primeiro paragrafo [0]
-        //corpo.style.background = 'black' //alterar cor de fundo
-        //p1.style.color = 'blue' //alterar a cor do primeiro paragrafo
-        //window.document.write('Está escrito: ' + p1.innerText) //texto que está no primeiro paragrafo
-        //document.wite(p1.innerHTML) //mostrar o que está escrito mantendo as formatações
-        //window.alert(p1.innerHTML)
-        //window.alert(p1.innerText)
+        corpo.style.background = 'black' //alterar cor de fundo
+        p1.style.color = 'blue' //alterar a cor do primeiro paragrafo
+        window.document.write('Está escrito: ' + p1.innerText) //texto que está no primeiro paragrafo
+        document.wite(p1.innerHTML) //mostrar o que está escrito mantendo as formatações
+        window.alert(p1.innerHTML)
+        window.alert(p1.innerText)
         
-        /*
+        
         var d = window.document.getElementById('msg')        
         d.style.background = 'green'
         d.innerText = 'Estou aguardando...'
-        */
+        
 
-        /*
+        
         var d = window.document.getElementsByName('msg')[0]
         d.innerText = 'Olá!'
-        */
+        
         var d = window.document.querySelector('div.msg') //seleção por seletor (#id .class)
         d.style.color = 'blue'
         d.style.background = 'black'
