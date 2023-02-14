@@ -12,16 +12,19 @@ var campoPalpite = document.querySelector('.campoPalpite');
 var contagemPalpites = 1;
 var botaoReinicio;
 
+
+
 function conferirPalpite() {
 
   var palpiteUsuario = Number(campoPalpite.value);
   if(contagemPalpites === 1) {
     palpites.textContent = 'Palpites anteriores: ';
   }
-  palpites.textContent += palpiteUsuario + ' ';
+  palpites.textContent += '['+ palpiteUsuario + '] ';
 
   if(palpiteUsuario === numeroAleatorio) {
-    ultimoResultado.textContent = 'Parabéns! Você acertou!';
+    ultimoResultado.textContent = 'Parabéns! Acertou com ' + contagemPalpites + ' palpites!'; 
+    
     ultimoResultado.style.backgroundColor = 'green';
     baixoOuAlto.textContent = '';
     configFimDeJogo();
